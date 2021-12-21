@@ -1,0 +1,11 @@
+<?php
+
+namespace Haitech\{Module}\Repositories\Caches;
+
+use Haitech\Support\Repositories\Caches\CacheAbstractDecorator;
+use Haitech\{Module}\Repositories\Interfaces\{Name}Interface;
+
+class {Name}CacheDecorator extends CacheAbstractDecorator implements {Name}Interface
+{
+
+}

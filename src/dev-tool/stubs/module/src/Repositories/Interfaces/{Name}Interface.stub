@@ -1,0 +1,9 @@
+<?php
+
+namespace Haitech\{Module}\Repositories\Interfaces;
+
+use Haitech\Support\Repositories\Interfaces\RepositoryInterface;
+
+interface {Name}Interface extends RepositoryInterface
+{
+}

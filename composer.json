@@ -1,0 +1,40 @@
+{
+    "name": "haitech/cms-dev-tool",
+    "description": "CMS Devtool source",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Haitech",
+            "email": "info@haitech.co"
+        }
+    ],
+    "require": {
+        "php-parallel-lint/php-parallel-lint": "^1.0",
+        "squizlabs/php_codesniffer": "^3.3",
+        "barryvdh/laravel-debugbar": "^3.2",
+        "barryvdh/laravel-ide-helper": "^2.6",
+        "phpmd/phpmd": "^2.8",
+        "doctrine/dbal": "^3.0",
+        "botble/git-commit-checker": "^1.0",
+        "haitech/cms": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Haitech\\DevTool\\": "src/dev-tool/src",
+            "Haitech\\PluginGenerator\\": "src/plugin-generator/src",
+            "Haitech\\ThemeGenerator\\": "src/theme-generator/src",
+            "Haitech\\WidgetGenerator\\": "src/widget-generator/src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Haitech\\DevTool\\Providers\\DevToolServiceProvider",
+                "Haitech\\PluginGenerator\\Providers\\PluginGeneratorServiceProvider",
+                "Haitech\\ThemeGenerator\\Providers\\ThemeGeneratorServiceProvider",
+                "Haitech\\WidgetGenerator\\Providers\\WidgetGeneratorServiceProvider"
+            ]
+        }
+    }
+}

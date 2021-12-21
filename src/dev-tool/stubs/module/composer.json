@@ -1,0 +1,20 @@
+{
+  "name": "haitech/{-name}",
+  "description": "{Name} package",
+  "type": "package",
+  "autoload": {
+    "psr-4": {
+      "Haitech\\{Name}\\": "src"
+    }
+  },
+  "require": {
+
+  },
+  "extra":{
+    "laravel":{
+      "providers":[
+        "Haitech\\{Name}\\Providers\\{Name}ServiceProvider"
+      ]
+    }
+  }
+}

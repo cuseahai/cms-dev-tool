@@ -1,0 +1,24 @@
+<?php
+
+namespace Haitech\{Module}\Http\Requests;
+
+use Haitech\Base\Enums\BaseStatusEnum;
+use Haitech\Support\Http\Requests\Request;
+use Illuminate\Validation\Rule;
+
+class {Name}Request extends Request
+{
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        return [
+            'name'   => 'required',
+            'status' => Rule::in(BaseStatusEnum::values()),
+        ];
+    }
+}

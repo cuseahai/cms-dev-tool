@@ -1,0 +1,10 @@
+<?php
+
+namespace Haitech\{Module}\Repositories\Eloquent;
+
+use Haitech\Support\Repositories\Eloquent\RepositoriesAbstract;
+use Haitech\{Module}\Repositories\Interfaces\{Name}Interface;
+
+class {Name}Repository extends RepositoriesAbstract implements {Name}Interface
+{
+}
